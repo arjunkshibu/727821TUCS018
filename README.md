@@ -1,70 +1,48 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Networking Concepts and OSI Model
 
-## Available Scripts
+## Network Types
 
-In the project directory, you can run:
+### LAN (Local Area Network)
+- Covers a small geographical area, like a house or small office.
+- Can connect multiple devices within the area.
 
-### `npm start`
+### MAN (Metropolitan Area Network)
+- Spans across a city or a metropolitan area.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### WAN (Wide Area Network)
+- Covers a large geographical area, such as countries or continents.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Technologies in WAN:
+- **SONET (Synchronous Optical Networking)**: Carries data through optical fiber cables.
+- **Frame Relay**: Connects LANs to WANs, such as the internet.
 
-### `npm test`
+## Key Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Modem
+- Converts digital signals to analog signals and vice versa.
+- Example: Converts digital signals from a computer to analog signals for transmission and then back to digital signals at the receiving end.
 
-### `npm run build`
+### ISP (Internet Service Provider)
+- Provides internet access.
+- Small ISPs are connected to larger ISPs.
+- **Tier-1 ISP**: Example - TATA.
+- **Tier-2 ISP**: Example - Airtel.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## OSI Model
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Application Layer
+- **User Interface**: Provides the interface for user interaction with network services, including applications like web browsers, email clients, and file transfer programs.
+- **Application Protocols**: Supports protocols like HTTP (web browsing), SMTP (email), FTP (file transfers), and DNS (domain name resolution).
+- **Data Representation**: Ensures data formatting and presentation are understandable by the receiving application, involving encoding, encryption, and compression.
+- **Data Exchange**: Manages the exchange of data between applications, including initiating and terminating connections and ensuring proper data transfer.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Presentation Layer
+- **Data Translation**: Converts data between the application's format and the network format, ensuring proper formatting for different systems (e.g., ASCII to Unicode).
+- **Data Formatting**: Handles various data types and formats such as text, images, or video.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 3. Session Layer
+- **Establishing Sessions**: Sets up, coordinates, and manages communication sessions between devices.
+- **Maintaining Sessions**: Keeps the connection active and can recover and maintain the session if disrupted.
+- **Synchronizing Data**: Adds checkpoints or synchronization points in data streams, allowing communication to resume from the last checkpoint if interrupted.
+- **Session Termination**: Properly ends a session, ensuring all data has been successfully exchanged and resources are freed.
